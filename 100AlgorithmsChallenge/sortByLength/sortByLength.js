@@ -1,0 +1,29 @@
+function sortByLength(inputArray) {
+    return inputArray.sort(function (a, b) { return a.length - b.length; });
+}
+console.log(sortByLength(["abc",
+    "",
+    "aaa",
+    "a",
+    "zz"]));
+console.log(sortByLength(["abc",
+    "",
+    "zzz",
+    "aaa",
+    "a",
+    "zz"]));
+/*
+["",
+                            "a",
+                            "zz",
+                            "abc",
+                            "zzz",
+                            "aaa"]
+*/
+/*
+ ["",
+                            "a",
+                            "zz",
+                            "abc",
+                            "aaa"]
+*/
